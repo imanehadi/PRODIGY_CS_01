@@ -1,29 +1,26 @@
-# Image Encryptor via Pixel Manipulation
+#  Caesar Cipher Project
 
-This is a simple **educational project** that demonstrates image encryption and decryption using **pixel manipulation** in Python.  
-It allows you to **encrypt images** by shuffling pixel positions and/or applying XOR with a pseudorandom keystream, and then **decrypt them back** to the original.
+This is a simple **Python program** that implements the **Caesar Cipher** algorithm.  
+It allows users to **encrypt and decrypt text messages** by shifting each letter by a specified number of positions in the alphabet.  
 
-> ⚠️ This project is for learning purposes only and is **not cryptographically secure**.
+This project is created for **educational purposes** to practice Python basics such as functions, loops, conditionals, and string manipulation.  
 
 ---
 
 ##  Features
 
-- Encrypt images using:
-  - **XOR**: Pixel values are XORed with a pseudorandom keystream derived from a passphrase.
-  - **Shuffle**: Pixel positions are permuted pseudorandomly.
-  - **Both**: Shuffle then XOR.
-- Decrypt images back to their original form.
-- Command-line interface (CLI) for easy usage.
+-  **Encrypt** text with a user-defined shift value.  
+-  **Decrypt** text using the same shift value.  
+-  Supports both **uppercase and lowercase letters**.  
+-  Keeps non-alphabetic characters unchanged (numbers, punctuation, spaces).  
+-  User-friendly command-line interface (CLI).  
 
 ---
 
 ##  Requirements
 
-- **Python 3.10+**
-- Libraries:
-  - `Pillow` (for image handling)
-  - `numpy` (for pixel manipulation)
+- **Python 3.x**  
+- No external libraries are required.  
 
 ---
 
@@ -32,24 +29,19 @@ It allows you to **encrypt images** by shuffling pixel positions and/or applying
 1. **Update packages**:
    ```bash
    sudo apt update
-sudo apt install python3 python3-pip -y
-pip install pillow numpy
-##  Usage
+sudo apt install python3 -y
+python3 caesar_cipher.py
 
-1. Run the program:
-   ```bash
-   python3 image_encryptor.py
-   
 Type 'encrypt' to encrypt or 'decrypt' to decrypt: encrypt
-Enter the image path: input/photo.png
-Enter your passphrase: mySecret123
-Choose method (xor/shuffle/both): both
-Encrypted image saved to: output/photo_encrypted.png
+Enter your message: Hello World
+Enter the shift number: 3
+Encrypted message: Khoor Zruog
 
 Type 'encrypt' to encrypt or 'decrypt' to decrypt: decrypt
-Enter the image path: output/photo_encrypted.png
-Enter your passphrase: mySecret123
-Choose method (xor/shuffle/both): both
-Decrypted image saved to: output/photo_decrypted.png
+Enter your message: Khoor Zruog
+Enter the shift number: 3
+Decrypted message: Hello World
+
+ 
 
 
