@@ -29,8 +29,8 @@ This project is created for **educational purposes** to practice Python basics s
 1. **Update packages**:
    ```bash
    sudo apt update
-sudo apt install python3 -y
-python3 caesar_cipher.py
+   sudo apt install python3 -y
+   python3 caesar_cipher.py
 
 Type 'encrypt' to encrypt or 'decrypt' to decrypt: encrypt
 Enter your message: Hello World
