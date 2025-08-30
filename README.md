@@ -1,73 +1,55 @@
-# Caesar Cipher Project
+# Image Encryptor via Pixel Manipulation
 
-Overview
+This is a simple **educational project** that demonstrates image encryption and decryption using **pixel manipulation** in Python.  
+It allows you to **encrypt images** by shuffling pixel positions and/or applying XOR with a pseudorandom keystream, and then **decrypt them back** to the original.
 
-This is a simple Python program that implements the Caesar Cipher algorithm. The program allows users to encrypt and decrypt text messages by shifting letters by a specified value.
+> ⚠️ This project is for learning purposes only and is **not cryptographically secure**.
 
-It is built as a small educational project to understand basic encryption techniques and Python programming concepts like functions, loops, and string manipulation.
+---
 
-## Features
+##  Features
 
-Encrypt any text message with a user-defined shift value.
+- Encrypt images using:
+  - **XOR**: Pixel values are XORed with a pseudorandom keystream derived from a passphrase.
+  - **Shuffle**: Pixel positions are permuted pseudorandomly.
+  - **Both**: Shuffle then XOR.
+- Decrypt images back to their original form.
+- Command-line interface (CLI) for easy usage.
 
-Decrypt any encrypted text using the same shift value.
+---
 
-Handles both uppercase and lowercase letters.
+##  Requirements
 
-Non-alphabetic characters (numbers, punctuation, spaces) remain unchanged.
+- **Python 3.10+**
+- Libraries:
+  - `Pillow` (for image handling)
+  - `numpy` (for pixel manipulation)
 
-User-friendly input prompts for encryption or decryption.
+---
 
-## How to Run
+##  Installation (Ubuntu)
 
-Clone or download the repository.
+1. **Update packages**:
+   ```bash
+   sudo apt update
+sudo apt install python3 python3-pip -y
+pip install pillow numpy
+##  Usage
 
-Open a terminal in the project folder.
-
-Run the program using Python 3:
-
-python3 caesar_cipher.py
-
-Follow the prompts:
-
-Type encrypt to encrypt a message or decrypt to decrypt.
-
-Enter your message.
-
-Enter the shift number.
-
-## Example
-
-Encryption:
+1. Run the program:
+   ```bash
+   python3 image_encryptor.py
+   
 Type 'encrypt' to encrypt or 'decrypt' to decrypt: encrypt
-Enter your message: Hello World
-Enter the shift number: 3
-Encrypted message: Khoor Zruog
+Enter the image path: input/photo.png
+Enter your passphrase: mySecret123
+Choose method (xor/shuffle/both): both
+Encrypted image saved to: output/photo_encrypted.png
 
-
-Decryption:
 Type 'encrypt' to encrypt or 'decrypt' to decrypt: decrypt
-Enter your message: Khoor Zruog
-Enter the shift number: 3
-Decrypted message: Hello World
+Enter the image path: output/photo_encrypted.png
+Enter your passphrase: mySecret123
+Choose method (xor/shuffle/both): both
+Decrypted image saved to: output/photo_decrypted.png
 
 
-Installation Requirements
-
-Python 3.x
-No external libraries are required.
-
-Project Structure
-caesar_cipher_project/
-│
-├── caesar_cipher.py       # Main Python program
-├── README.md              # Project documentation
-
-
-Knowledge Gained
-
-Understanding of classical encryption techniques.
-
-Practice with Python string manipulation and ASCII operations.
-
-Writing user-interactive command-line applications.
