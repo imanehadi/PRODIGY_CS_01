@@ -41,7 +41,8 @@ Type 'encrypt' to encrypt or 'decrypt' to decrypt: encrypt
 Enter your message: Hello World
 Enter the shift number: 3
 Encrypted message: Khoor Zruog
- . **Encryption**:
+
+. **Decryption**: 
     ```bash
 Type 'encrypt' to encrypt or 'decrypt' to decrypt: decrypt
 Enter your message: Khoor Zruog
