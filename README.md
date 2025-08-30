@@ -28,7 +28,6 @@ Run the program using Python 3:
 
 python3 caesar_cipher.py
 
-
 Follow the prompts:
 
 Type encrypt to encrypt a message or decrypt to decrypt.
@@ -40,7 +39,6 @@ Enter the shift number.
 ## Example
 
 Encryption:
-
 Type 'encrypt' to encrypt or 'decrypt' to decrypt: encrypt
 Enter your message: Hello World
 Enter the shift number: 3
@@ -48,11 +46,11 @@ Encrypted message: Khoor Zruog
 
 
 Decryption:
-
 Type 'encrypt' to encrypt or 'decrypt' to decrypt: decrypt
 Enter your message: Khoor Zruog
 Enter the shift number: 3
 Decrypted message: Hello World
+
 
 Installation Requirements
 
