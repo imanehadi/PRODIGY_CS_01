@@ -1,11 +1,12 @@
-#Caesar Cipher Project
+# Caesar Cipher Project
+
 Overview
 
 This is a simple Python program that implements the Caesar Cipher algorithm. The program allows users to encrypt and decrypt text messages by shifting letters by a specified value.
 
 It is built as a small educational project to understand basic encryption techniques and Python programming concepts like functions, loops, and string manipulation.
 
-Features
+## Features
 
 Encrypt any text message with a user-defined shift value.
 
@@ -17,7 +18,7 @@ Non-alphabetic characters (numbers, punctuation, spaces) remain unchanged.
 
 User-friendly input prompts for encryption or decryption.
 
-How to Run
+## How to Run
 
 Clone or download the repository.
 
@@ -36,7 +37,7 @@ Enter your message.
 
 Enter the shift number.
 
-Example
+## Example
 
 Encryption:
 
